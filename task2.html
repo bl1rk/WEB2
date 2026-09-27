@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 — Component Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="task2-body">
+
+<header>
+    <nav class="component nav" aria-label="Main navigation">
+        <a class="nav__logo" href="#">MyLogo</a>
+
+        <div class="nav__links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">A longer navigation link</a>
+        </div>
+
+        <div class="nav__actions">
+            <button type="button">Log in</button>
+            <button type="button">Sign up</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="component cards" aria-label="Cards">
+        <article class="card">
+            <h2 class="card__title">First card</h2>
+            <p class="card__description">
+                A short description.
+            </p>
+            <button class="card__button" type="button">Read more</button>
+        </article>
+
+        <article class="card">
+            <h2 class="card__title">Second card</h2>
+            <p class="card__description">
+                This description is longer to help you check that the cards
+                can have different amounts of text while their buttons stay
+                aligned along the bottom.
+            </p>
+            <button class="card__button" type="button">Read more</button>
+        </article>
+
+        <article class="card">
+            <h2 class="card__title">Third card</h2>
+            <p class="card__description">
+                A description of medium length for comparison.
+            </p>
+            <button class="card__button" type="button">Read more</button>
+        </article>
+    </section>
+
+    <nav class="component pagination" aria-label="Pagination">
+        <div class="pagination__controls">
+            <button type="button" aria-label="Previous page">&lt;</button>
+
+            <div class="pagination__pages">
+                <button type="button" aria-current="page">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+            </div>
+
+            <button type="button" aria-label="Next page">&gt;</button>
+        </div>
+
+        <p class="pagination__count">Total: 42 results</p>
+    </nav>
+
+    <section class="component comment" aria-label="Comment">
+        <div class="comment__avatar" aria-hidden="true">JD</div>
+
+        <div class="comment__body">
+            <div class="comment__meta">
+                <strong class="comment__name">Jordan Davis</strong>
+                <time class="comment__date" datetime="2026-09-24">September 24</time>
+            </div>
+
+            <p class="comment__text">
+                This is a longer comment. It gives you some text to test how
+                the comment wraps beside the avatar when the page becomes
+                narrow.
+            </p>
+        </div>
+    </section>
+
+    <section class="component pricing" aria-label="Pricing plans">
+        <article class="plan">
+            <h2 class="plan__title">Basic</h2>
+            <p class="plan__description">For getting started.</p>
+            <p class="plan__price">$10 <span>/ month</span></p>
+            <button class="plan__button" type="button">Choose Basic</button>
+        </article>
+
+        <article class="plan plan--recommended">
+            <p>Recommended</p>
+            <h2 class="plan__title">Pro</h2>
+            <p class="plan__description">
+                For people who need more features.
+            </p>
+            <p class="plan__price">$20 <span>/ month</span></p>
+            <button class="plan__button" type="button">Choose Pro</button>
+        </article>
+
+        <article class="plan">
+            <h2 class="plan__title">Premium</h2>
+            <p class="plan__description">
+                For teams with extra needs.
+            </p>
+            <p class="plan__price">$30 <span>/ month</span></p>
+            <button class="plan__button" type="button">Choose Premium</button>
+        </article>
+    </section>
+</main>
+
+</body>
+</html>
