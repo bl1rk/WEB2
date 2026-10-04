@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hero Archive: a small field guide to superheroes, their strengths, and the stories worth exploring.">
+        <title>Hero Archive | Beyond the cape</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg py-3 border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">HERO ARCHIVE<span class="brand-dot">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">The archive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#strengths">Super strengths</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#heroes">Meet the heroes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">Reading guide</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="hero-section py-5" id="home" aria-labelledby="hero-title">
+                <div class="container">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-12 col-lg-6 order-1 order-lg-2">
+                            <h1 id="hero-title">There’s more<br>behind the <em>cape.</em></h1>
+                            <p class="lead my-4">Extraordinary powers. Very human choices. Explore the characters who remind us what courage looks like.</p>
+                            <a class="btn btn-dark btn-lg" href="#heroes">Explore the heroes <span aria-hidden="true">&rarr;</span></a>
+                            <p class="d-none d-md-block small mt-4 mb-0 hero-note">A field guide for curious readers and lifelong fans.</p>
+                            <p class="d-md-none small mt-3 mb-0 hero-note">Your next favourite hero starts here.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 order-2 order-lg-1">
+                            <figure class="mb-0">
+                                <img class="img-fluid hero-image" src="images/batman.jpg" alt="Batman, the masked protector of Gotham City">
+                                <figcaption class="d-flex justify-content-between gap-3 small mt-2"><span>In focus: Batman</span><span>Gotham’s detective</span></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="py-5 border-top" aria-labelledby="about-title">
+                <div class="container">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-12 col-md-5">
+                            <h2 id="about-title">Not every hero<br>can fly.</h2>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <p class="fs-5">Some rely on a brilliant mind. Others have powers they never asked for. What connects them is the choice to help when it matters.</p>
+                            <p class="mb-0">Hero Archive is a small fan-made collection. Start with a strength that interests you, meet three memorable characters, and find your own way into their stories.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="strengths" class="strengths-section" aria-labelledby="strengths-title">
+                <div class="strengths-wrap">
+                    <h2 id="strengths-title">What makes a hero?</h2>
+                    <p class="strengths-intro">Three different strengths. One reason to use them.</p>
+                    <div class="strengths-grid">
+                        <article class="strength-item">
+                            <h3>A sharp mind</h3>
+                            <p>A good plan can change the odds. Batman uses observation, training, and technology to protect his city.</p>
+                            <a href="#batman">Meet the detective &rarr;</a>
+                        </article>
+                        <article class="strength-item">
+                            <h3>A helping hand</h3>
+                            <p>Great strength matters most when it helps someone else. Superman puts his abilities in service of others.</p>
+                            <a href="#superman">Meet the protector &rarr;</a>
+                        </article>
+                        <article class="strength-item">
+                            <h3>A brave heart</h3>
+                            <p>Being afraid does not mean giving up. Spider-Man keeps showing up for his neighbourhood, even on the hard days.</p>
+                            <a href="#spider-man">Meet the neighbour &rarr;</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="heroes" class="py-5" aria-labelledby="heroes-title">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 col-lg-8">
+                            <h2 id="heroes-title">Find your kind of hero.</h2>
+                            <p class="mb-0">Different worlds, different methods. Get to know the people behind the masks.</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="card h-100" id="batman">
+                                <img src="images/batman.jpg" class="card-img-top" alt="Batman in his dark suit and cape" loading="lazy">
+                                <div class="card-body d-flex flex-column p-4">
+                                    <p class="small text-secondary mb-2">DC / Gotham City</p>
+                                    <h3 class="card-title h4">Batman</h3>
+                                    <p class="card-text">No superpowers. Just determination, detective skills, and the tools to take on Gotham’s toughest mysteries.</p>
+                                    <p class="mt-auto mb-0 fw-semibold">His strength: preparation.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="card h-100" id="superman">
+                                <img src="images/superman.png" class="card-img-top" alt="Superman wearing his blue suit and red cape" loading="lazy">
+                                <div class="card-body d-flex flex-column p-4">
+                                    <p class="small text-secondary mb-2">DC / Metropolis</p>
+                                    <h3 class="card-title h4">Superman</h3>
+                                    <p class="card-text">A visitor from another world who chooses to make Earth his home, and to stand beside the people who need him.</p>
+                                    <p class="mt-auto mb-0 fw-semibold">His strength: compassion.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="card h-100" id="spider-man">
+                                <img src="images/spider-man.webp" class="card-img-top" alt="Spider-Man in his red and blue web-patterned suit" loading="lazy">
+                                <div class="card-body d-flex flex-column p-4">
+                                    <p class="small text-secondary mb-2">Marvel / New York City</p>
+                                    <h3 class="card-title h4">Spider-Man</h3>
+                                    <p class="card-text">School, everyday problems, and saving the neighbourhood. Peter Parker knows that responsibility does not take a day off.</p>
+                                    <p class="mt-auto mb-0 fw-semibold">His strength: persistence.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faq" class="py-5 border-top" aria-labelledby="faq-title">
+                <div class="container">
+                    <div class="row g-4 g-lg-5">
+                        <div class="col-12 col-lg-4">
+                            <h2 id="faq-title">Every story starts somewhere.</h2>
+                            <p>A short reading guide for your first adventure.</p>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="accordion" id="readingGuide">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answerOne" aria-expanded="true" aria-controls="answerOne">Which hero should I start with?</button></h3>
+                                    <div id="answerOne" class="accordion-collapse collapse show" data-bs-parent="#readingGuide">
+                                        <div class="accordion-body">
+                                            Choose the kind of story you enjoy: Batman for detective stories, Superman for hope and big adventures, or Spider-Man for everyday life mixed with superhero action.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">Do I need to know every previous story?</button></h3>
+                                    <div id="answerTwo" class="accordion-collapse collapse" data-bs-parent="#readingGuide">
+                                        <div class="accordion-body">
+                                            No. An origin story or a self-contained adventure is an approachable place to begin. Look for a collected story with a clear beginning and ending.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerThree" aria-expanded="false" aria-controls="answerThree">Are all these heroes in the same universe?</button></h3>
+                                    <div id="answerThree" class="accordion-collapse collapse" data-bs-parent="#readingGuide">
+                                        <div class="accordion-body">
+                                            Batman and Superman belong to DC. Spider-Man belongs to Marvel. This archive brings them together as a fan collection, rather than a shared story universe.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="py-4 border-top">
+            <div class="container">
+                <div class="row g-3 align-items-center">
+                    <div class="col-12 col-md-8">
+                        <p class="mb-1 fw-bold">HERO ARCHIVE.</p>
+                        <p class="small mb-0">A student fan project. Characters and artwork belong to their respective owners.</p>
+                    </div>
+                    <div class="col-12 col-md-4 text-md-end">
+                        <a class="footer-link" href="#home">Back to the top &uarr;</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    </body>
+</html>

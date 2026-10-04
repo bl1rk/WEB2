@@ -1,0 +1,39 @@
+body {
+    background-color: #f7f4ed;
+}
+.hero-image, .card-img-top {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.strengths-section {
+    padding: 2rem 5%;
+    background-color: #e8eee5;
+}
+.strengths-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.strength-item {
+    padding: 1rem;
+    background-color: whitesmoke;
+    border: 1px solid #26ff00;
+    border-radius: 8px;
+}
+.strengths-section h2 {
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    .strengths-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .strengths-section h2 {
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 992px) {
+    .strengths-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
