@@ -1,13 +1,13 @@
 :root {
     --color-white: #ffffff;
-    --color-page: #f1f3f6;
-    --color-text: #202633;
-    --color-muted: #596579;
-    --color-ink: #172033;
-    --color-border: #d8dee8;
-    --color-red: #ff0000;
-    --color-blue: #3952a1;
-    --color-yellow: #efc41c;
+    --color-page: #f2f2f2;
+    --color-text: #242424;
+    --color-muted: #666666;
+    --color-ink: #222222;
+    --color-border: #d2d2d2;
+    --color-red: #e53935;
+    --color-blue: #365f9d;
+    --color-yellow: #e7c547;
 }
 
 * {
@@ -83,7 +83,7 @@ body {
 }
 
 
-/* Общие стили Task 2 */
+/* Task 2 */
 
 .task2-body {
     margin: 0;

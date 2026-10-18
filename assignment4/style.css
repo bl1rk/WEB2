@@ -1,0 +1,159 @@
+/* Общие стили */
+
+body {
+    background: #E6EFEC;
+    color: #16302B;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.form-panel {
+    max-width: 54rem;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 32px #16302b26;
+}
+
+.panel-header {
+    padding: 26px 40px;
+    background: #0F6B5F;
+    color: white;
+}
+
+.panel-header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.panel-body {
+    padding: 40px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+legend.form-label {
+    float: none;
+    width: auto;
+}
+
+.form-control,
+.form-select {
+    min-width: 0;
+    font-size: inherit;
+    background-color: #F4F7F5;
+    border-color: #CADBD5;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: #0F6B5F;
+    box-shadow: 0 0 0 3px #0f6b5f26;
+}
+
+.form-check-input:checked {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+.btn-find {
+    background: #F2A93B;
+    color: #16302B;
+}
+
+.btn-find:hover,
+.btn-find:active {
+    background: #E89A25;
+    color: #16302B;
+}
+
+.btn:focus-visible,
+.btn-check:focus-visible + .btn {
+    outline: 3px solid #0F6B5F;
+    outline-offset: 3px;
+}
+
+/* Task 1 */
+
+.task1 .form-floating > .form-control {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.task1 .form-floating > label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.task1 .form-floating > .form-control::placeholder {
+    color: #596E68;
+    opacity: 1;
+}
+
+.task1 .trip-toggle .btn {
+    padding-block: 7px;
+    border-color: #0F6B5F;
+    color: #0F6B5F;
+}
+
+.task1 .trip-toggle .btn-check:checked + .btn,
+.task1 .input-group-text {
+    background: #0F6B5F;
+    border-color: #0F6B5F;
+    color: white;
+}
+
+.task1 .btn-clear {
+    border: 1px solid #16302B;
+    color: #16302B;
+}
+
+.task1 .btn-clear:hover {
+    background: #E6EFEC;
+    border-color: #16302B;
+}
+
+/* Task 2 */
+
+.task2 :is(input, select, textarea):user-invalid {
+    border-color: #B02A37;
+}
+
+.task2 :is(input, select, textarea):user-invalid ~ .invalid-feedback,
+.task2 .radio-field:has(input:user-invalid) > .invalid-feedback {
+    display: block;
+}
+
+/* Телефон */
+
+@media (max-width: 767.98px) {
+    .panel-header,
+    .panel-body {
+        padding: 20px;
+    }
+
+    .panel-header h1 {
+        font-size: 20px;
+    }
+
+    .task1 .trip-toggle {
+        display: flex;
+    }
+
+    .task1 .trip-toggle .btn {
+        flex: 1;
+        padding-inline: 12px;
+    }
+}
