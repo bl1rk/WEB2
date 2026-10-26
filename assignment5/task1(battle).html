@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/battle.js" defer></script>
+</head>
+<body>
+<main>
+    <h1>Turn-Based Battle</h1>
+
+    <section class="battle-rules">
+        <h2>Rules</h2>
+        <ul>
+            <li>Attack to damage the enemy.</li>
+            <li>Defend to reduce the next enemy hit by half.</li>
+            <li>Heal to restore health. Healing uses are limited.</li>
+            <li>Critical hits deal double damage.</li>
+            <li>Defeat the enemy before your health reaches zero.</li>
+        </ul>
+    </section>
+
+    <section class="battle-arena">
+        <h2>Battle Arena</h2>
+
+        <div class="fighters">
+            <article class="fighter-card">
+                <h3>Hero</h3>
+
+                <label for="hero-health">Health</label>
+                <progress id="hero-health" max="100" value="100"></progress>
+
+                <p id="hero-health-text">HP: 100 / 100</p>
+                <p id="heals-remaining">Heals remaining: 3</p>
+            </article>
+
+            <article class="fighter-card">
+                <h3>Enemy</h3>
+
+                <label for="enemy-health">Health</label>
+                <progress id="enemy-health" max="100" value="100"></progress>
+
+                <p id="enemy-health-text">HP: 100 / 100</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="battle-controls">
+        <h2>Actions</h2>
+
+        <div class="action-buttons">
+            <button id="attack-button" type="button">Attack</button>
+            <button id="defend-button" type="button">Defend</button>
+            <button id="heal-button" type="button">Heal</button>
+            <button id="restart-button" type="button">Restart</button>
+        </div>
+
+        <p id="battle-result" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="battle-history">
+        <h2>Battle Log</h2>
+        <ul id="battle-log"></ul>
+    </section>
+</main>
+</body>
+</html>

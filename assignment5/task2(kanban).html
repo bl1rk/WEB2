@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kanban Board</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/kanban.js" defer></script>
+</head>
+<body>
+<h1>Kanban Board</h1>
+
+<div class="controls">
+    <label for="search-input">Search by tag:</label>
+    <input
+            id="search-input"
+            type="search"
+            placeholder="For example: html"
+    >
+
+    <label for="sort-select">Priority:</label>
+    <select id="sort-select">
+        <option value="high-first">High to low</option>
+        <option value="low-first">Low to high</option>
+    </select>
+</div>
+
+<label for="completion-progress">Completed tasks:</label>
+<progress id="completion-progress" max="100" value="0"></progress>
+
+<p id="completion-text" aria-live="polite"></p>
+<p id="board-message" class="error" role="status"></p>
+<p id="empty-message" role="status" hidden>No tasks found.</p>
+
+<div class="board" id="kanban-board">
+    <section class="column" data-status="todo">
+        <h2>To Do</h2>
+        <div class="cards-container"></div>
+    </section>
+
+    <section class="column" data-status="in-progress">
+        <h2>
+            In Progress
+            (<span class="progress-count">0</span>/<span id="progress-limit">3</span>)
+        </h2>
+        <div class="cards-container"></div>
+    </section>
+
+    <section class="column" data-status="done">
+        <h2>Done</h2>
+        <div class="cards-container"></div>
+    </section>
+</div>
+</body>
+</html>

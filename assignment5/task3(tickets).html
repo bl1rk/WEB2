@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/tickets.js" defer></script>
+</head>
+<body class="ticket-page">
+
+<h1>Ticket Builder</h1>
+
+<div class="ticket-layout">
+    <form id="ticket-form">
+        <p id="error-summary" role="alert"></p>
+
+        <label for="event">Event</label>
+        <select id="event" name="event" required
+                aria-describedby="event-error">
+            <option value="">Choose an event</option>
+            <option value="music">Music Night</option>
+            <option value="movie">Movie Night</option>
+        </select>
+        <small id="event-error" class="field-error"></small>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required
+               aria-describedby="date-help date-error">
+        <small id="date-help"></small>
+        <small id="date-error" class="field-error"></small>
+
+        <label for="type">Ticket type</label>
+        <select id="type" name="type" required
+                aria-describedby="type-error">
+            <option value="">Choose a ticket type</option>
+            <option value="standard">Standard — 3000 KZT</option>
+            <option value="vip">VIP — 7000 KZT</option>
+        </select>
+        <small id="type-error" class="field-error"></small>
+
+        <label for="quantity">Quantity</label>
+        <input id="quantity" name="quantity" type="number"
+               min="1" step="1" value="1" required
+               aria-describedby="quantity-help quantity-error">
+        <small id="quantity-help"></small>
+        <small id="quantity-error" class="field-error"></small>
+
+        <label for="name">Full name</label>
+        <input id="name" name="fullName" type="text"
+               minlength="2" autocomplete="name" required
+               aria-describedby="name-error">
+        <small id="name-error" class="field-error"></small>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"
+               autocomplete="email" required
+               aria-describedby="email-error">
+        <small id="email-error" class="field-error"></small>
+
+        <label for="promo">Promo code (optional)</label>
+        <input id="promo" name="promo" type="text"
+               aria-describedby="promo-help promo-error">
+        <small id="promo-help">Try STUDENT10 for 10% off.</small>
+        <small id="promo-error" class="field-error"></small>
+
+        <button type="submit">Book tickets</button>
+    </form>
+
+    <section class="ticket-preview">
+        <h2>Live preview</h2>
+        <div id="preview" aria-live="polite"></div>
+    </section>
+</div>
+
+<section id="ticket-result" class="ticket-result"
+         role="status" hidden></section>
+
+</body>
+</html>

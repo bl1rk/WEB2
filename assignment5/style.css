@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+    color: #222;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+nav, .controls, .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.fighters, .board, .ticket-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.fighter-card, .column, #ticket-form, .ticket-preview {
+    flex: 1;
+    min-width: 0;
+}
+
+.battle-rules, .battle-arena, .battle-controls, .battle-history,
+.fighter-card, .column, .card, #ticket-form,
+.ticket-preview, .ticket-result {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    font: inherit;
+    padding: 8px;
+    max-width: 100%;
+}
+
+button {cursor: pointer; }
+button:hover:not(:disabled) { background: #ddd; }
+button:disabled { cursor: not-allowed; opacity: 0.6; }
+.card button { margin-right: 6px; margin-bottom: 6px; }
+#ticket-form label { display: block; margin: 12px 0 5px; }
+#ticket-form input, #ticket-form select { width: 100%; }
+#ticket-form small { display: block; margin-top: 4px; }
+#ticket-form button { margin-top: 15px; }
+progress { width: 100%; max-width: 300px; }
+p, .card { overflow-wrap: anywhere; }
+.error, .field-error, #error-summary, .lose { color: #a00000; }
+.invalid { border: 2px solid #a00000; background: #fff0f0; }
+.win, .success, .ticket-result, .card.is-done { background: #eaf5ea; }
+#empty-message { padding: 10px; background: #fff3cd; }
+:focus-visible { outline: 3px solid #1765a5; outline-offset: 2px; }
+[hidden] { display: none !important; }
+
+@media (max-width: 700px) {
+    .fighters, .board, .ticket-layout { flex-direction: column; }
+    .fighter-card, .column, #ticket-form, .ticket-preview { width: 100%; }
+}
