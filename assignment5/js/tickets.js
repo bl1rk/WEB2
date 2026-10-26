@@ -26,14 +26,10 @@ const touched = new Set();
 let submitted = false;
 form.noValidate = true;
 
-
-// Находит элемент по id
 function get(id) {
     return document.getElementById(id);
 }
 
-
-// Читает все поля формы
 function readForm() {
     const data = {};
 
@@ -50,8 +46,6 @@ function readForm() {
     return data;
 }
 
-
-// Возвращает ошибку или пустую строку
 function getError(field, data) {
     if (field.required && data[field.id] === "") {
         return "This field is required.";
@@ -96,8 +90,6 @@ function getError(field, data) {
     return "";
 }
 
-
-// Выводит строки через DOM
 function draw(id, lines) {
     get(id).textContent = "";
 
@@ -108,8 +100,6 @@ function draw(id, lines) {
     }
 }
 
-
-// Обновляет проверки и предпросмотр
 function update() {
     const data = readForm();
     const errors = [];
@@ -167,8 +157,6 @@ function update() {
     return { errors, lines };
 }
 
-
-// Первая проверка после выхода из поля
 for (const field of fields) {
     field.addEventListener("blur", function () {
         touched.add(field.id);
@@ -179,8 +167,6 @@ for (const field of fields) {
 form.addEventListener("input", update);
 form.addEventListener("change", update);
 
-
-// Отправка формы
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     submitted = true;
